@@ -36,6 +36,7 @@ public class Block : MonoBehaviour
         Vector2 initPos = transform.position;
         float percent = 0;
 
+        //lerp position based on percent - if duration = 2, time.deltatime / 2 after one second = 0.5
         while (percent < 1)
         {
             percent += Time.deltaTime / duration;
